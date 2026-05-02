@@ -56,9 +56,13 @@ src="https://www.facebook.com/tr?id=1846356186055488&ev=PageView&noscript=1"
 </head>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  document.querySelectorAll('a[href*="https://ctyuasds.com/glistening-2.html"]').forEach(function(link) {
+  document.querySelectorAll('a[href*="line.me"]').forEach(function(link) {
     link.addEventListener('click', function() {
-      fbq('track', 'Lead', { content_name: '訂閱按鈕點擊' });
+      fbq('track', 'Purchase', {
+        value: 0,
+        currency: 'TWD',
+        content_name: 'LINE 好友加入'
+      });
     });
   });
 
